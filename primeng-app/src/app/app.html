@@ -1,15 +1,16 @@
-<div class="p-grid">
-    <div class="p-col-fixed" style="width: 250px;">
+<div class="main-container p-d-flex">
+    <div class="side-nav-wrapper">
         <app-side-nav></app-side-nav>
     </div>
-    <div class="p-col">
-        <div class="p-grid">
-            <div class="p-col-4">
-                <app-e-document-list></app-e-document-list>
-            </div>
-            <div class="p-col-8">
-                <app-e-document-view></app-e-document-view>
-            </div>
+    <div class="content-wrapper p-d-flex">
+        <div class="document-list-wrapper">
+            <app-e-document-list></app-e-document-list>
+        </div>
+        <div class="document-view-wrapper flex-grow-1">
+            <app-e-document-view></app-e-document-view>
+        </div>
+        <div class="info-panel-wrapper">
+            <app-info-panel></app-info-panel>
         </div>
     </div>
 </div>

@@ -1,0 +1,32 @@
+.e-document-view-container {
+    background-color: #f4f4f4;
+    height: 100%;
+}
+
+.document-content-area {
+    height: calc(100vh - 50px); /* Adjust height based on toolbar */
+    overflow-y: auto;
+}
+
+.document-header {
+    background-color: #ffffff;
+}
+
+.document-preview {
+    margin: auto;
+    width: 100%;
+    max-width: 800px; /* Desktop view width */
+    transition: max-width 0.3s ease-in-out;
+    border: 1px solid #dee2e6;
+    background-color: #ffffff;
+    padding: 2rem;
+}
+
+.document-preview.mobile-view {
+    max-width: 375px; /* Mobile view width */
+}
+
+.document-preview img {
+    width: 100%;
+    height: auto;
+}

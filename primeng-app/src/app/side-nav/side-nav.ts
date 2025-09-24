@@ -10,7 +10,7 @@ import { MenuModule } from 'primeng/menu';
   styleUrls: ['./side-nav.css']
 })
 export class SideNav implements OnInit {
-  items: MenuItem[] = [];
+  items: MenuItem[];
 
   ngOnInit() {
     this.items = [

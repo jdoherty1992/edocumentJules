@@ -1,3 +1,4 @@
+/* General Dialog Styles */
 :host ::ng-deep .p-dialog .p-dialog-header {
     border-bottom: 1px solid #dee2e6;
     padding: 1.5rem;
@@ -10,8 +11,10 @@
 :host ::ng-deep .p-dialog .p-dialog-footer {
     border-top: 1px solid #dee2e6;
     padding: 1rem 1.5rem;
+    text-align: right;
 }
 
+/* TabView Styles */
 :host ::ng-deep .p-tabview .p-tabview-nav {
     border: none;
 }
@@ -26,16 +29,29 @@
     color: #2196F3;
 }
 
+/* Form Field Styles */
 .p-field-checkbox {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     display: flex;
     align-items: center;
 }
 
 .p-field-checkbox label {
     margin-left: 0.5rem;
+    flex-grow: 1;
 }
 
 .p-formgroup-inline .p-field-radiobutton {
     margin-right: 2rem;
+}
+
+/* Green Toggle Switch */
+:host ::ng-deep .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+    background-color: #4CAF50 !important;
+}
+
+/* Info Icon */
+.pi-info-circle {
+    color: #6c757d;
+    cursor: pointer;
 }

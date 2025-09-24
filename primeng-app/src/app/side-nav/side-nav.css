@@ -1,3 +1,31 @@
+:host {
+    display: block;
+    height: 100%;
+}
+
+.side-nav-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #ffffff; /* Main menu background */
+}
+
+.side-nav-header {
+    background-color: #f8f9fa; /* Header background */
+    border-bottom: 1px solid #dee2e6;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.side-nav-menu {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+/* PrimeNG Menu Overrides */
 :host ::ng-deep .p-menu {
     width: 100%;
     border: none;
@@ -5,9 +33,24 @@
 
 :host ::ng-deep .p-menu .p-menuitem-link {
     border-radius: 0;
+    color: #495057;
 }
 
-:host ::ng-deep .p-menu .p-menuitem-link.active-menu-item {
+:host ::ng-deep .p-menu .p-menuitem-link:hover {
+    background-color: #e9ecef;
+}
+
+:host ::ng-deep .p-menu .p-menuitem.active-menu-item > .p-menuitem-link {
     background-color: #e3f2fd;
     color: #2196F3;
+    border-right: 3px solid #2196F3;
+}
+
+:host ::ng-deep .p-menu .p-menuitem-text {
+    color: #495057;
+}
+
+:host ::ng-deep .p-menu .p-menuitem.active-menu-item .p-menuitem-text {
+    color: #2196F3;
+    font-weight: bold;
 }

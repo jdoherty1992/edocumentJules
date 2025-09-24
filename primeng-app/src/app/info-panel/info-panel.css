@@ -1,0 +1,45 @@
+:host {
+    display: block;
+    width: 300px; /* Adjust width as needed */
+    background-color: #f8f9fa;
+    border-left: 1px solid #dee2e6;
+    height: 100%;
+}
+
+:host ::ng-deep .p-panel {
+    height: 100%;
+}
+
+:host ::ng-deep .p-panel .p-panel-header {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.info-section {
+    padding: 1rem;
+}
+
+.info-field {
+    margin-bottom: 1.5rem;
+}
+
+.info-field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #495057;
+}
+
+.info-field span {
+    color: #6c757d;
+}
+
+.info-field small {
+    display: block;
+    color: #6c757d;
+    margin-top: 0.5rem;
+}
+
+.info-field .pi-check-circle {
+    color: #4CAF50;
+    font-size: 1.2rem;
+}

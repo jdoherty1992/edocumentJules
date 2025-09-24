@@ -30,69 +30,80 @@
       </div>
     </div>
 
-    <p-tabs>
-      <p-tabpanel header="General">
+    <p-tabView>
+      <p-tabPanel header="General">
         <p>This is the general tab. You can add any general information here.</p>
-      </p-tabpanel>
-      <p-tabpanel header="Document Options">
+      </p-tabPanel>
+      <p-tabPanel header="Document Options">
         <div class="p-grid">
           <div class="p-col-12">
             <h5>Security Options</h5>
             <div class="p-field-checkbox">
-              <p-toggleswitch formControlName="assembleDocument"></p-toggleswitch>
+              <p-inputSwitch formControlName="assembleDocument"></p-inputSwitch>
               <label>Assemble Document</label>
+              <i class="pi pi-info-circle p-ml-2"></i>
             </div>
             <div class="p-field-checkbox">
-              <p-toggleswitch formControlName="copyContent"></p-toggleswitch>
-              <label>Copy Content</label>
+                <p-inputSwitch formControlName="copyContent"></p-inputSwitch>
+                <label>Copy Content</label>
+                <i class="pi pi-info-circle p-ml-2"></i>
             </div>
             <div class="p-field-checkbox">
-              <p-toggleswitch formControlName="editAnnotations"></p-toggleswitch>
-              <label>Edit Annotations</label>
+                <p-inputSwitch formControlName="editAnnotations"></p-inputSwitch>
+                <label>Edit Annotations</label>
+                <i class="pi pi-info-circle p-ml-2"></i>
             </div>
             <div class="p-field-checkbox">
-              <p-toggleswitch formControlName="editContent"></p-toggleswitch>
-              <label>Edit Content</label>
+                <p-inputSwitch formControlName="editContent"></p-inputSwitch>
+                <label>Edit Content</label>
+                <i class="pi pi-info-circle p-ml-2"></i>
             </div>
             <div class="p-field-checkbox">
-              <p-toggleswitch formControlName="fillFormFields"></p-toggleswitch>
-              <label>Fill Form Fields</label>
+                <p-inputSwitch formControlName="fillFormFields"></p-inputSwitch>
+                <label>Fill Form Fields</label>
+                <i class="pi pi-info-circle p-ml-2"></i>
             </div>
             <div class="p-field-checkbox">
-              <p-toggleswitch formControlName="allowPrint"></p-toggleswitch>
-              <label>Allow Print</label>
+                <p-inputSwitch formControlName="allowPrint"></p-inputSwitch>
+                <label>Allow Print</label>
+                <i class="pi pi-info-circle p-ml-2"></i>
             </div>
           </div>
           <div class="p-col-12">
             <h5>Other Options</h5>
             <div class="p-field-checkbox">
-              <p-toggleswitch formControlName="landscapeOrientation"></p-toggleswitch>
+              <p-inputSwitch formControlName="landscapeOrientation"></p-inputSwitch>
               <label>Landscape Orientation</label>
+              <i class="pi pi-info-circle p-ml-2"></i>
+            </div>
+             <div class="p-field-checkbox">
+                <p-inputSwitch formControlName="embedFonts"></p-inputSwitch>
+                <label>Embed Fonts</label>
+                <i class="pi pi-info-circle p-ml-2"></i>
             </div>
             <div class="p-field-checkbox">
-              <p-toggleswitch formControlName="embedFonts"></p-toggleswitch>
-              <label>Embed Fonts</label>
+                <p-inputSwitch formControlName="jpegCompressionEnabled"></p-inputSwitch>
+                <label>JPEG Compression Enabled</label>
+                <i class="pi pi-info-circle p-ml-2"></i>
             </div>
             <div class="p-field-checkbox">
-              <p-toggleswitch formControlName="jpegCompressionEnabled"></p-toggleswitch>
-              <label>JPEG Compression Enabled</label>
+                <p-inputSwitch formControlName="scaleImages"></p-inputSwitch>
+                <label>Scale Images</label>
+                <i class="pi pi-info-circle p-ml-2"></i>
             </div>
             <div class="p-field-checkbox">
-              <p-toggleswitch formControlName="scaleImages"></p-toggleswitch>
-              <label>Scale Images</label>
-            </div>
-            <div class="p-field-checkbox">
-              <p-toggleswitch formControlName="generateSinglePagePdf"></p-toggleswitch>
-              <label>Generate Single Page Pdf</label>
+                <p-inputSwitch formControlName="generateSinglePagePdf"></p-inputSwitch>
+                <label>Generate Single Page Pdf</label>
+                <i class="pi pi-info-circle p-ml-2"></i>
             </div>
           </div>
           <div class="p-col-12">
               <h5>PDF Type</h5>
-              <p-select [options]="pdfTypes" formControlName="pdfType" placeholder="Select a PDF Type"></p-select>
+              <p-dropdown [options]="pdfTypes" formControlName="pdfType" placeholder="Select a PDF Type"></p-dropdown>
           </div>
         </div>
-      </p-tabpanel>
-    </p-tabs>
+      </p-tabPanel>
+    </p-tabView>
   </form>
   <ng-template pTemplate="footer">
     <p-button icon="pi pi-times" (click)="closeDialog()" label="Cancel" styleClass="p-button-text"></p-button>
