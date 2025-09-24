@@ -30,69 +30,69 @@
       </div>
     </div>
 
-    <p-tabView>
-      <p-tabPanel header="General">
+    <p-tabs>
+      <p-tabpanel header="General">
         <p>This is the general tab. You can add any general information here.</p>
-      </p-tabPanel>
-      <p-tabPanel header="Document Options">
+      </p-tabpanel>
+      <p-tabpanel header="Document Options">
         <div class="p-grid">
           <div class="p-col-12">
             <h5>Security Options</h5>
             <div class="p-field-checkbox">
-              <p-inputSwitch formControlName="assembleDocument"></p-inputSwitch>
+              <p-toggleswitch formControlName="assembleDocument"></p-toggleswitch>
               <label>Assemble Document</label>
             </div>
             <div class="p-field-checkbox">
-              <p-inputSwitch formControlName="copyContent"></p-inputSwitch>
+              <p-toggleswitch formControlName="copyContent"></p-toggleswitch>
               <label>Copy Content</label>
             </div>
             <div class="p-field-checkbox">
-              <p-inputSwitch formControlName="editAnnotations"></p-inputSwitch>
+              <p-toggleswitch formControlName="editAnnotations"></p-toggleswitch>
               <label>Edit Annotations</label>
             </div>
             <div class="p-field-checkbox">
-              <p-inputSwitch formControlName="editContent"></p-inputSwitch>
+              <p-toggleswitch formControlName="editContent"></p-toggleswitch>
               <label>Edit Content</label>
             </div>
             <div class="p-field-checkbox">
-              <p-inputSwitch formControlName="fillFormFields"></p-inputSwitch>
+              <p-toggleswitch formControlName="fillFormFields"></p-toggleswitch>
               <label>Fill Form Fields</label>
             </div>
             <div class="p-field-checkbox">
-              <p-inputSwitch formControlName="allowPrint"></p-inputSwitch>
+              <p-toggleswitch formControlName="allowPrint"></p-toggleswitch>
               <label>Allow Print</label>
             </div>
           </div>
           <div class="p-col-12">
             <h5>Other Options</h5>
             <div class="p-field-checkbox">
-              <p-inputSwitch formControlName="landscapeOrientation"></p-inputSwitch>
+              <p-toggleswitch formControlName="landscapeOrientation"></p-toggleswitch>
               <label>Landscape Orientation</label>
             </div>
             <div class="p-field-checkbox">
-              <p-inputSwitch formControlName="embedFonts"></p-inputSwitch>
+              <p-toggleswitch formControlName="embedFonts"></p-toggleswitch>
               <label>Embed Fonts</label>
             </div>
             <div class="p-field-checkbox">
-              <p-inputSwitch formControlName="jpegCompressionEnabled"></p-inputSwitch>
+              <p-toggleswitch formControlName="jpegCompressionEnabled"></p-toggleswitch>
               <label>JPEG Compression Enabled</label>
             </div>
             <div class="p-field-checkbox">
-              <p-inputSwitch formControlName="scaleImages"></p-inputSwitch>
+              <p-toggleswitch formControlName="scaleImages"></p-toggleswitch>
               <label>Scale Images</label>
             </div>
             <div class="p-field-checkbox">
-              <p-inputSwitch formControlName="generateSinglePagePdf"></p-inputSwitch>
+              <p-toggleswitch formControlName="generateSinglePagePdf"></p-toggleswitch>
               <label>Generate Single Page Pdf</label>
             </div>
           </div>
           <div class="p-col-12">
               <h5>PDF Type</h5>
-              <p-dropdown [options]="pdfTypes" formControlName="pdfType" placeholder="Select a PDF Type"></p-dropdown>
+              <p-select [options]="pdfTypes" formControlName="pdfType" placeholder="Select a PDF Type"></p-select>
           </div>
         </div>
-      </p-tabPanel>
-    </p-tabView>
+      </p-tabpanel>
+    </p-tabs>
   </form>
   <ng-template pTemplate="footer">
     <p-button icon="pi pi-times" (click)="closeDialog()" label="Cancel" styleClass="p-button-text"></p-button>
