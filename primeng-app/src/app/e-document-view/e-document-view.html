@@ -1,0 +1,21 @@
+<div class="p-grid">
+    <div class="p-col-12">
+        <p-toolbar>
+            <div class="p-toolbar-group-left">
+                <button pButton type="button" label="Edit Design" icon="pi pi-pencil" (click)="showDialog()"></button>
+            </div>
+            <div class="p-toolbar-group-right">
+                <button pButton type="button" icon="pi pi-search" class="p-button-secondary"></button>
+                <button pButton type="button" icon="pi pi-calendar" class="p-button-secondary"></button>
+                <button pButton type="button" icon="pi pi-times" class="p-button-secondary"></button>
+            </div>
+        </p-toolbar>
+    </div>
+    <div class="p-col-12">
+        <div class="document-container">
+            <img src="https://via.placeholder.com/800x1100" alt="Document content" style="width: 100%;">
+        </div>
+    </div>
+</div>
+
+<app-edit-e-document-dialog [(display)]="displayDialog"></app-edit-e-document-dialog>

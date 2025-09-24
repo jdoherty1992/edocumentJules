@@ -1,0 +1,13 @@
+:host ::ng-deep .p-menu {
+    width: 100%;
+    border: none;
+}
+
+:host ::ng-deep .p-menu .p-menuitem-link {
+    border-radius: 0;
+}
+
+:host ::ng-deep .p-menu .p-menuitem-link.active-menu-item {
+    background-color: #e3f2fd;
+    color: #2196F3;
+}
