@@ -5,9 +5,9 @@ import { DialogModule } from 'primeng/dialog';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { RadioButtonModule } from 'primeng/radiobutton';
-import { TabViewModule } from 'primeng/tabview';
-import { InputSwitchModule } from 'primeng/inputswitch';
-import { DropdownModule } from 'primeng/dropdown';
+import { TabsModule } from 'primeng/tabs';
+import { ToggleSwitchModule } from 'primeng/toggleswitch';
+import { SelectModule } from 'primeng/select';
 
 @Component({
   selector: 'app-edit-e-document-dialog',
@@ -19,9 +19,9 @@ import { DropdownModule } from 'primeng/dropdown';
     ButtonModule,
     InputTextModule,
     RadioButtonModule,
-    TabViewModule,
-    InputSwitchModule,
-    DropdownModule
+    TabsModule,
+    ToggleSwitchModule,
+    SelectModule
   ],
   templateUrl: './edit-e-document-dialog.html',
   styleUrls: ['./edit-e-document-dialog.css']
@@ -30,8 +30,8 @@ export class EditEDocumentDialog implements OnInit {
   @Input() display: boolean = false;
   @Output() displayChange = new EventEmitter<boolean>();
 
-  editEDocumentForm: FormGroup;
-  pdfTypes: any[];
+  editEDocumentForm!: FormGroup;
+  pdfTypes: any[] = [];
 
   constructor(private fb: FormBuilder) { }
 

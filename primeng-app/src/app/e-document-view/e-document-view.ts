@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ToolbarModule } from 'primeng/toolbar';
 import { ButtonModule } from 'primeng/button';
-import { TabViewModule } from 'primeng/tabview';
+import { TabsModule } from 'primeng/tabs';
 import { SelectButtonModule } from 'primeng/selectbutton';
 
 import { EditEDocumentDialog } from '../edit-e-document-dialog/edit-e-document-dialog';
@@ -16,7 +16,7 @@ import { EditEDocumentDialog } from '../edit-e-document-dialog/edit-e-document-d
     FormsModule,
     ToolbarModule,
     ButtonModule,
-    TabViewModule,
+    TabsModule,
     SelectButtonModule,
     EditEDocumentDialog
   ],
@@ -25,7 +25,7 @@ import { EditEDocumentDialog } from '../edit-e-document-dialog/edit-e-document-d
 })
 export class EDocumentView implements OnInit {
   displayDialog: boolean = false;
-  viewOptions: any[];
+  viewOptions: any[] = [];
   selectedView: string = 'desktop';
 
   ngOnInit() {

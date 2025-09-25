@@ -16,11 +16,11 @@
         <!-- Document Header -->
         <div class="document-header surface-card p-2 border-round-top">
             <div class="p-d-flex p-jc-between p-ai-center">
-                <p-tabView>
-                    <p-tabPanel header="Name"></p-tabPanel>
-                    <p-tabPanel header="LP01 - MFA Gate"></p-tabPanel>
-                    <p-tabPanel header="Edit"></p-tabPanel>
-                </p-tabView>
+                <p-tabs>
+                    <p-tabpanel header="Name"></p-tabpanel>
+                    <p-tabpanel header="LP01 - MFA Gate"></p-tabpanel>
+                    <p-tabpanel header="Edit"></p-tabpanel>
+                </p-tabs>
                 <div class="view-controls p-d-flex p-ai-center">
                     <p-selectButton [options]="viewOptions" [(ngModel)]="selectedView" optionLabel="icon" optionValue="value">
                         <ng-template let-item>

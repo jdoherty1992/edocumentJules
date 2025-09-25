@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./e-document-list.css']
 })
 export class EDocumentList implements OnInit {
-  documents: any[];
+  documents: any[] = [];
   selectedDocument: any;
 
   ngOnInit() {
